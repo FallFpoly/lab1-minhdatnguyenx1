@@ -10,17 +10,15 @@ import java.util.Scanner;
  *
  * @author Admin
  */
-public class Bai01 {
+public class Bai03 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        double diemtb;
-        String hoten;
-        System.out.print("Ho ten: ");
-        hoten=sc.next();
-        System.out.print("Diem TB: ");
-        diemtb=sc.nextDouble();
-        System.out.println("\n===== Thong tin =====");
-        System.out.println("Ho ten: " + hoten);
-        System.out.println("Diem TB: " + diemtb);
+        double canh,thetich1,thetich2;
+        System.out.print("Nhap canh: ");
+        canh=sc.nextDouble();
+        thetich1 = canh*canh*canh;
+        thetich2 = Math.pow(canh,3);
+        System.out.println("The tich cach 1: "+thetich1);
+        System.out.println("The tich cach 2: "+thetich2);
     }
 }
